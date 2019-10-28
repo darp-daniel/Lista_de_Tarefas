@@ -11,16 +11,24 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <form method="POST" action="loginServlet">
+        <p>Bem-vindo, por favor realize o cadastro</p>
+        <form method="POST" action="CadastroServlet">
             <p>
-                <label>Email</label>
+                <label>Nome</label>
+                <input name="nome">
+            </p>
+            <p>
+                <label>E-mail</label>
                 <input name="email" type="email">
+            </p>    
+            <p>    
+                <label>Senha</label>
+                <input name="senha" type="password">
             </p>
             <p>
-            <label>Senha</label>
-            <input name="senha" type="password">
+                <label>Data de Nascimento</label>
+                <input name="dth_nascimento" type="date">
             </p>
-        <br><input type="submit">
         </form>
     </body>
 </html>
